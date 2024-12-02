@@ -6,9 +6,9 @@ import 'employee.dart';
 
 class EmployeeBloc extends Bloc<EmployeeEvent, EmployeeState> {
   List<Employee> employees = [
-    Employee(name: 'John Doe', salary: 5000),
-    Employee(name: 'Jane Smith', salary: 6000),
-    Employee(name: 'Alice Johnson', salary: 7000),
+    Employee(name: 'Frank Gallagher', salary: 5000),
+    Employee(name: 'Philip Gallagher', salary: 6000),
+    Employee(name: 'Fiano Gallagher', salary: 7000),
   ];
 
   EmployeeBloc() : super(EmployeeListState([])) {
@@ -21,5 +21,6 @@ class EmployeeBloc extends Bloc<EmployeeEvent, EmployeeState> {
       employees[event.index].salary -= 500;
       emit(EmployeeListState(List.from(employees)));
     });
+    emit(EmployeeListState(List.from(employees)));
   }
 }

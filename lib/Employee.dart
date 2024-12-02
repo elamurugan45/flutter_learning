@@ -9,23 +9,23 @@ class Employee {
   //setter
 
   set id(int id){
-    this._id=id;
+    _id=id;
   }
 
   set name(String name){
-    this._name=name;
+    _name=name;
   }
 
   set salary(double salary){
-    this._salary=salary;
+    _salary=salary;
   }
 
   //getters
- int get id =>this._id;
+ int get id =>_id;
 
-  String get name =>this._name;
+  String get name =>_name;
 
-  double get salary =>this._salary;
+  double get salary =>_salary;
 
 
 }
